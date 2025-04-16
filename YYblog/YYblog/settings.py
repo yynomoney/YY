@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'YYblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'YYblog',     # 数据库名称
-        'USER': 'root',         # 数据库用户名
+        'NAME': '',     # 数据库名称
+        'USER': '',         # 数据库用户名
         'PASSWORD': '123456',     # 数据库密码
-        'HOST': '192.168.136.129',             # 数据库主机（或 IP）
+        'HOST': '',             # 数据库主机（或 IP）
         'PORT': '3306',                  # 数据库端口
         'OPTIONS': {
             'charset': 'utf8mb4',        # 设置字符集（支持 emoji）
@@ -141,8 +141,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_PORT =587
-EMAIL_HOST_USER = '2495628454@qq.com'
-EMAIL_HOST_PASSWORD = 'evjrgzafukzcdica'
-DEFAULT_FROM_EMAIL = '2495628454@qq.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = ''
 
 LOGIN_URL= '/auth/login'
